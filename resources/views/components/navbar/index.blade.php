@@ -9,7 +9,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <x-navbar.link class="nav-link" href="/">Home</x-navbar.link>
-                        <x-navbar.link class="nav-link" href="/aturan">Aturan</x-navbar.link>
+                        <x-navbar.link class="nav-link" href="/alur">Alur</x-navbar.link>
                         <x-navbar.link class="nav-link" href="/jadwal">Jadwal</x-navbar.link>
                         <x-navbar.link class="nav-link" href="/daftar">Daftar</x-navbar.link>
                         <x-navbar.link class="nav-link" href="/seleksi">Seleksi</x-navbar.link>
@@ -43,7 +43,7 @@
     <div class="md:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <x-navbar.dropdown-item href="/">Home</x-navbar.dropdown-item>
-            <x-navbar.dropdown-item href="/aturan">Aturan</x-navbar.dropdown-item>
+            <x-navbar.dropdown-item href="/alur">Alur</x-navbar.dropdown-item>
             <x-navbar.dropdown-item href="/jadwal">Jadwal</x-navbar.dropdown-item>
             <x-navbar.dropdown-item href="/daftar">Daftar</x-navbar.dropdown-item>
             <x-navbar.dropdown-item href="/seleksi">Seleksi</x-navbar.dropdown-item>

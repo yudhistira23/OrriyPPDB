@@ -1,13 +1,15 @@
 <?php
 
 use App\Models\Jadwal;
+use App\Models\Flow;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/aturan', function () {
-    return view('aturan');
+Route::get('/alur', function () {
+    $alur = flow::all();
+    return view('alur', compact('alur'));
 });
 Route::get('/jadwal', function () {
     $jadwals = Jadwal::all();
