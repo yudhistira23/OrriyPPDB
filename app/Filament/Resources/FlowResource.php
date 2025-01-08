@@ -7,6 +7,7 @@ use App\Filament\Resources\FlowResource\RelationManagers;
 use App\Models\Flow;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -24,8 +25,14 @@ class FlowResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('flow_name')->required(),
-                FileUpload::make('image_path')->image()->minSize('100')->maxSize('1024')->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg']),
+                TextInput::make('flow_name')
+                    ->required()
+                    ->default('Alur'),
+                FileUpload::make('image_path')
+                    ->image()
+                    ->minSize('100')
+                    ->maxSize('1024')
+                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg']),
             ]);
     }
 
